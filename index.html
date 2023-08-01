@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+    <title>Giovanni Santana</title>
+  </head>
+  <body>
+    <nav class="nav-container">
+      <div class="nav">
+        <button class="dropdown-btn">
+          <ion-icon name="filter-outline" size="large"></ion-icon>
+        </button>
+        <p class="nav-logo">
+          <ion-icon name="code-slash-outline" size="large"></ion-icon>
+        </p>
+        <div class="links">
+          <div class="link-div button-div">
+            <a href="#about-me" class="link nav-link">About Me</a>
+            <div class="underline underline-div"></div>
+          </div>
+          <div class="link-div button-div">
+            <a href="#projects" class="link nav-link">Projects</a>
+            <div class="underline underline-div"></div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="close-btn--dropdown">
+          <ion-icon
+            name="close-circle-outline"
+            class="close-icon"
+            size="small"
+          ></ion-icon>
+        </button>
+        <p class="nav-logo nav-logo-dropdown">
+          <ion-icon name="code-slash-outline" size="large"></ion-icon>
+        </p>
+        <div class="link-div button-div">
+          <a href="#about-me" class="link nav-link nav-link--dropdown"
+            >About Me</a
+          >
+          <div class="underline underline-div"></div>
+        </div>
+        <div class="link-div button-div">
+          <a href="#projects" class="link nav-link nav-link--dropdown"
+            >Projects</a
+          >
+          <div class="underline underline-div"></div>
+        </div>
+      </div>
+    </nav>
+    <main class="main">
+      <section class="hero section">
+        <p class="sub-intro">Hey, I'm</p>
+        <h1 class="intro">Giovanni Santana</h1>
+        <h2 class="intro-job">A Frontend Web Developer</h2>
+        <p class="intro-description">
+          as a junior web developer i am excited to make my way into the
+          industry and gain experience. I am open to collaboration and feedback,
+          and strive to create user-friendly and visually appealing websites.
+        </p>
+        <div class="button-div">
+          <a class="link project-btn" href="#projects">My Projects</a>
+          <div class="underline"></div>
+        </div>
+      </section>
+      <section class="about-me section" id="about-me">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-me-description">
+          I am an ambitious junior web developer looking to make my mark in the
+          industry. Although I have no previous professional experience, I am
+          highly motivated and have a strong desire to learn and grow. I
+          approach every project with enthusiasm and a willingness to
+          collaborate with others.
+        </p>
+      </section>
+      <section class="projects" id="projects">
+        <h2 class="section-title project-section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project">
+            <h3 class="project-title">Notes App</h3>
+            <div class="project-img--container">
+              <img
+                src="imgs/notes.png"
+                alt="image of notes app"
+                class="project-img project-img-zoom"
+                data-description="Notes app that lets you save notes to read later"
+                data-link="#"
+              />
+            </div>
+          </div>
+          <div class="project">
+            <h3 class="project-title">Project Zomboid Helper</h3>
+            <div class="project-img--container">
+              <img
+                src="imgs/zomboid.png"
+                alt="image of project zomboid website"
+                class="project-img project-img-zoom"
+                data-description="Guide to project zomboid"
+                data-link="#"
+              />
+            </div>
+          </div>
+          <div class="project">
+            <h3 class="project-title">Bonsai</h3>
+            <div class="project-img--container">
+              <img
+                src="imgs/zomboid.png"
+                alt="image of bonsai website"
+                class="project-img project-img-zoom"
+                data-description="Copy of a website"
+                data-link="#"
+              />
+            </div>
+          </div>
+          <div class="project">
+            <h3 class="project-title">Manifesting with Daimy</h3>
+            <div class="project-img--container">
+              <img
+                src="imgs/daimy.png"
+                alt="Daimy's website"
+                class="project-img project-img-zoom"
+                data-description="Spritual Coaching"
+                data-link="#"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="blur-div"></div>
+      </section>
+      <footer>
+        <div>
+          <div class="socials">
+            <a href="#" class="social-link"
+              ><ion-icon name="logo-github" size="large"></ion-icon
+            ></a>
+            <a href="#" class="social-link"
+              ><ion-icon name="logo-twitter" size="large"></ion-icon
+            ></a>
+            <a href="#" class="social-link"
+              ><ion-icon name="logo-instagram" size="large"></ion-icon
+            ></a>
+          </div>
+          <h3 class="footer-txt">Designed & Built by Giovanni Santana</h3>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
