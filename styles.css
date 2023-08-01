@@ -298,16 +298,17 @@ body {
     padding: 0 5rem;
   }
   .nav {
-    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
   }
   .nav-logo {
     margin: auto;
   }
   .dropdown-btn {
     display: inline-block;
-    position: fixed;
-    left: 3rem;
-    top: 2rem;
+    justify-self: start;
+    margin-left: 5rem;
   }
   .intro-description {
     width: 100%;

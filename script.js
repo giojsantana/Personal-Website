@@ -35,7 +35,7 @@ projectImgs.forEach((img) => {
       <ion-icon
       name="close-circle-outline"
       class="close-icon"
-      size="small"
+      size="large"
       ></ion-icon>
       </button>
       <h3 class="popup-title">${title}</h3>
