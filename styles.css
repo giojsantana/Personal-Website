@@ -358,11 +358,17 @@ body {
     display: none;
   }
   .about-me-description,
-  .intro-description,
-  .popup-description,
-  .link {
+  .intro-description {
     font-size: 4rem;
     line-height: 5.5rem;
+  }
+  .popup-description,
+  .popup-title {
+    font-size: 6.5rem;
+  }
+  .link:link,
+  .link:visited {
+    font-size: 6rem;
   }
 }
 @media screen and (max-width: 500px) {
@@ -382,9 +388,12 @@ body {
   }
   .about-me-description,
   .intro-description,
-  .popup-description,
-  .link {
+  .popup-description {
     font-size: 4.5rem;
     line-height: 6rem;
+  }
+  .link:link,
+  .link:visited {
+    font-size: 7rem;
   }
 }
