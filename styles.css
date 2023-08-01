@@ -268,6 +268,9 @@ body {
   text-align: center;
   margin: 3rem 0 4rem;
 }
+.footer-icon {
+  font-size: 5rem;
+}
 
 @media screen and (max-width: 1150px) {
   html {
