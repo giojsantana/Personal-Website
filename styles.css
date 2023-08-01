@@ -370,6 +370,12 @@ body {
   .link:visited {
     font-size: 6rem;
   }
+  .footer-txt {
+    font-size: 4rem;
+  }
+  .footer-icon {
+    font-size: 8rem;
+  }
 }
 @media screen and (max-width: 500px) {
   html {
