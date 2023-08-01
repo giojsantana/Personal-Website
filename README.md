@@ -1,3 +1,5 @@
 # Personal-Website
 
-This is my personal website. used to show previous projects
+This is the website I use to show off the projects I have worked on.
+
+I am open to feedback. 
