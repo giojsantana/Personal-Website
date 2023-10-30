@@ -36,7 +36,8 @@ body {
 .nav--hide {
   transform: translateY(-100%);
 }
-.link {
+.link,
+.linkweb {
   text-decoration: none;
   color: #dd730f;
   font-size: 2rem;

@@ -10,6 +10,7 @@ const blur = document.querySelector(".blur-div");
 const linkUnderline = function (link) {
   link.addEventListener("mouseover", function () {
     this.nextElementSibling.classList.add("underline-active");
+    console.log("hover");
   });
 
   link.addEventListener("mouseleave", function () {
@@ -30,29 +31,32 @@ projectImgs.forEach((img) => {
     const html = `
       
       <div class="project-popup">
-      <div class="popup">
-      <button class="close-btn">
-      <ion-icon
-      name="close-circle-outline"
-      class="close-icon"
-      size="large"
-      ></ion-icon>
-      </button>
-      <h3 class="popup-title">${title}</h3>
-      <div class="project-img--container popup-img--container">
-      <img src="${e.target.getAttribute(
-        "src"
-      )}" alt="${title}" class="project-img popup-img" />
+        <div class="popup">
+          <button class="close-btn">
+          <ion-icon
+          name="close-circle-outline"
+          class="close-icon"
+          size="large"
+          ></ion-icon>
+          </button>
+          <h3 class="popup-title">${title}</h3>
+          <div class="project-img--container popup-img--container">
+            <img src="${e.target.getAttribute(
+              "src"
+            )}" alt="${title}" class="project-img popup-img" />
+          </div>
+          <p class="popup-description">
+            ${e.target.dataset.description}
+          </p>
+          <a href="${e.target.dataset.linkweb}" class="linkweb">${
+      e.target.dataset.linkweb ? "here" : ""
+    }</a>
+          <div class="button-div popup-link">
+            <a href="${e.target.dataset.link}" class="link">Check It Out</a>
+            <div class="underline underline-div"></div>
+          </div>
         </div>
-        <p class="popup-description">
-        ${e.target.dataset.description}
-        </p>
-        <div class="button-div popup-link">
-        <a href="${e.target.dataset.link}" class="link">Check It Out</a>
-        <div class="underline underline-div"></div>
-        </div>
-        </div>
-        </div>
+      </div>
         
         `;
     projectSection.insertAdjacentHTML("beforeend", html);
